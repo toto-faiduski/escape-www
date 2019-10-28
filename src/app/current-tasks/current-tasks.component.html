@@ -7,7 +7,7 @@
 <table class="table table-striped">
     <thead>
         <tr>
-            <th scope="col">#</th>
+            <!--th scope="col">#</th-->
             <th scope="col">Date</th>
             <th scope="col">Propriétaire</th>
             <th scope="col">Type</th>
@@ -17,8 +17,8 @@
     </thead>
     <tbody>
         <tr *ngFor="let task of currentTasks; index as i">
-            <th scope="row">{{ i + 1 }}</th>
-            <td>{{ task.addTime | date:'short'}}</td>
+            <!--th scope="row">{{ i + 1 }}</th-->
+            <td>{{ task.addTime | date:'dd/MM/yy hh:mm:ss'}}</td>
             <td>{{ task.clientName }}</td>
             <td>{{ task.type }}</td>
             <td>{{ task.parameters }}</td>

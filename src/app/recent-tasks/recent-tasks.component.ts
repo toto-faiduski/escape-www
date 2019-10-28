@@ -10,7 +10,7 @@ import {Task} from '../recent-tasks.service';
 export class RecentTasksComponent implements OnInit {
   recentTasks:Task[];
   error="";
-  page=4;
+  page=1;
 
   constructor(
     private recentTasksService: RecentTasksService

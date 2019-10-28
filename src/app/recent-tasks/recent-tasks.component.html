@@ -1,13 +1,13 @@
 <div><h3>Tâches récentes</h3></div>
 
-<ngb-pagination class="d-flex justify-content-center" [collectionSize]="recentTasks.length" [(page)]="page" aria-label="Default pagination"></ngb-pagination>
+<ngb-pagination class="d-flex justify-content-center" [collectionSize]="recentTasks.length" [(page)]="page" [pageSize]="2" aria-label="Default pagination"></ngb-pagination>
 
 
 
 <table class="table table-striped">
     <thead>
         <tr>
-            <th scope="col">#</th>
+            <!--th scope="col">#</th-->
             <th scope="col">Début</th>
             <th scope="col">Fin</th>
             <th scope="col">Propriétaire</th>
@@ -19,9 +19,9 @@
     </thead>
     <tbody>
         <tr *ngFor="let task of recentTasks; index as i">
-            <th scope="row">{{ i + 1 }}</th>
-            <td>{{ task.addTime | date:'short'}}</td>
-            <td>{{ task.endTime | date:'short'}}</td>
+            <!--th scope="row">{{ i + 1 }}</th-->
+            <td>{{ task.addTime | date:'dd/MM/yy hh:mm:ss'}}</td>
+            <td>{{ task.endTime | date:'dd/MM/yy hh:mm:ss'}}</td>
             <td>{{ task.clientName }}</td>
             <td>{{ task.type }}</td>
             <td>{{ task.parameters }}</td>

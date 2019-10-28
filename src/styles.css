@@ -40,4 +40,22 @@
     line-height: 20px;
     text-transform: uppercase;
 }
-    
+
+/******************
+ * Tableaux de tâches
+ ********************/
+.table{
+    font-size: smaller;
+    border: 1px solid #dee2e6;
+}
+
+.table th{
+    /*background: linear-gradient(to bottom,#00BEEF,#009EEF);*/
+    background: #007bff;
+    text-align: center;
+    border: 1px solid #dee2e6;
+    color: #fff;
+}
+.table td{
+    border: 1px solid #dee2e6;
+}
