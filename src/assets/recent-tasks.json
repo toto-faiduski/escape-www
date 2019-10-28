@@ -1,0 +1,14 @@
+[{
+  "addDate": "2019-03-07",
+  "user": "david",
+  "type": "MultiLeaf_Enhancement",
+  "parameters": "-cfg:test2",
+  "progress": 12
+},
+{
+  "addDate": "2019-11-08",
+  "user": "laura",
+  "type": "MultiLeaf_Enhancement",
+  "parameters": "-cfg:test2",
+  "progress": 27
+}]

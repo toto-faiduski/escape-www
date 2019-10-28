@@ -1,0 +1,16 @@
+<div><h3>Erreurs ExtractTextPDF</h3></div>
+
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th scope="col">Code</th>
+    <th scope="col">Description</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let error of errors; index as i">
+    <th scope="row">{{ error.code | number  }}</th>
+    <td>{{ error.description }}</td>
+  </tr>
+  </tbody>
+</table>

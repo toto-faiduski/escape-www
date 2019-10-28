@@ -1,1 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.css';
+
+@font-face {
+    font-family: 'Myriad Pro Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Myriad Pro Regular'), url('./assets/fonts/MYRIADPRO-REGULAR.woff') format('woff');
+}
+    
+@font-face {
+    font-family: 'Myriad Pro Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Myriad Pro Bold'), url('./assets/fonts/MYRIADPRO-BOLD.woff') format('woff');
+}
+
+.tech #power
+{
+	font-size:x-small;
+	color: #000000;
+}
+.tech #tech
+{
+	font-family: "Myriad Pro Bold";
+	font-size : xx-large;
+	font-weight: bold;
+	color: #00aeef;
+}
+.tech #research
+{
+	font-family: "Myriad Pro Regular";
+	font-size : xx-large;
+	color: #000000;
+}
+
+.menu-header {
+    color: #999999;
+    font-weight: bold;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+    
