@@ -15,6 +15,22 @@
     src: local('Myriad Pro Bold'), url('./assets/fonts/MYRIADPRO-BOLD.woff') format('woff');
 }
 
+.navbar
+{
+    background-color: #f8f8f8;
+    border: 1px solid;
+    border-color: #E7E7E7;
+    border-radius: 10px;
+}
+
+.menu
+{
+    padding-top: 15px;
+    background-color: #f0f0f0;
+    border: 1px solid;
+    border-color: #E7E7E7;
+    border-top-left-radius: 10px;
+}
 .tech #power
 {
 	font-size:x-small;
