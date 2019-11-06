@@ -27,20 +27,20 @@
     <!-- MENU -->
     <div class="col-2 menu">
         <ul class="nav nav-light flex-column">
-          <li class="menu-header">Navigation</li>
+          <li class="nav-header">Navigation</li>
           <li class="nav-item">
-            <a [routerLink]="['/']" class="nav-link"><i class="fa fa-home fa-fw"></i> Accueil</a>
+            <a [routerLink]="['/']" class="nav-link"><fa-icon [icon]="faHome"></fa-icon> Accueil</a>
           </li>
           <li class="nav-item"> 
-            <a [routerLink]="['/CurrentTasks']" class="nav-link"><i class="fa fa-tasks fa-fw"></i> Tâches en cours</a>
+            <a [routerLink]="['/CurrentTasks']" class="nav-link"><fa-icon [icon]="faTasks"></fa-icon> Tâches en cours</a>
           </li>
           <li class="nav-item"> 
-            <a [routerLink]="['/RecentTasks']" class="nav-link"><i class="fa fa-list fa-fw"></i> Dernières tâches</a>
+            <a [routerLink]="['/RecentTasks']" class="nav-link"><fa-icon [icon]="faList"></fa-icon> Dernières tâches</a>
           </li>
         </ul>
-        <h5 class="menu-header">Erreurs</h5>
+        <!--h5 class="menu-header">Erreurs</h5-->
         <ul class="nav nav-light flex-column">
-          <li class="menu-header">Erreurs</li>
+          <li class="nav-header">Erreurs</li>
           <li class="nav-item">
             <a href="index.php?page=Erreurs_EditionC" class="nav-link">EditionC</a>
           </li>
@@ -48,9 +48,9 @@
             <a [routerLink]="['/ErrorsExtractTextPdf']" class="nav-link">ExtractTextPDF</a>
           </li>
           
-          <li class="menu-header">...</li>
+          <li class="nav-header">...</li>
           <li class="nav-item">
-            <a href="index.php?page=News" class="nav-link"><i class="fa fa-rss fa-fw"></i> News</a>
+            <a href="index.php?page=News" class="nav-link"><fa-icon [icon]="faRss"></fa-icon> News</a>
           </li>
         </ul>
       </div>
