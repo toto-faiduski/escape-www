@@ -1,30 +1,28 @@
-<div class="page-header"><h3>Tâches en cours</h3></div>
+<section>
+    <h3 class="page-header">Tâches en cours</h3>
 
-<ngb-pagination class="d-flex justify-content-center" [collectionSize]="currentTasks.length" [(page)]="page" aria-label="Default pagination"></ngb-pagination>
-
-
-
-<table class="table table-striped">
-    <thead>
-        <tr>
-            <!--th scope="col">#</th-->
-            <th scope="col">Date</th>
-            <th scope="col">Propriétaire</th>
-            <th scope="col">Type</th>
-            <th scope="col">Paramètres</th>
-            <th scope="col">%</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let task of currentTasks; index as i">
-            <!--th scope="row">{{ i + 1 }}</th-->
-            <td>{{ task.addTime | date:'dd/MM/yy hh:mm:ss'}}</td>
-            <td>{{ task.clientName }}</td>
-            <td>{{ task.type }}</td>
-            <td>{{ task.parameters }}</td>
-            <td>{{ task.progress }}</td>
-        </tr>
-    </tbody>
-</table>
-
-<ngb-pagination class="d-flex justify-content-center" [collectionSize]="currentTasks.length" [(page)]="page" aria-label="Default pagination"></ngb-pagination>
+    <ngb-pagination class="d-flex justify-content-center" [collectionSize]="currentTasks.length" [(page)]="page" aria-label="Default pagination"></ngb-pagination>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <!--th scope="col">#</th-->
+                <th scope="col">Date</th>
+                <th scope="col">Propriétaire</th>
+                <th scope="col">Type</th>
+                <th scope="col">Paramètres</th>
+                <th scope="col">%</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let task of currentTasks; index as i">
+                <!--th scope="row">{{ i + 1 }}</th-->
+                <td>{{ task.addTime | date:'dd/MM/yy hh:mm:ss'}}</td>
+                <td>{{ task.clientName }}</td>
+                <td>{{ task.type }}</td>
+                <td>{{ task.parameters }}</td>
+                <td>{{ task.progress }}</td>
+            </tr>
+        </tbody>
+    </table>
+    <ngb-pagination class="d-flex justify-content-center" [collectionSize]="currentTasks.length" [(page)]="page" aria-label="Default pagination"></ngb-pagination>
+</section>
