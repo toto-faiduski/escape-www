@@ -1,33 +1,32 @@
-<header class="navbar navbar-expand-lg navbar-ligth">
-  <a class="navbar-brand" [routerLink]="['/']">
-    <img [src]="'../assets/img/escape2.png'" alt="">
-  </a>
+<header class="navbar navbar-expand navbar-ligth es-navbar">
+  <a class="navbar-brand mr-0 mr-md-2 py-0" [routerLink]="['/']">
+    <img [src]="'../assets/img/escape2.png'" alt="escape logo" >
+  </a> 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <!--li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li-->
     </ul>
-    <ul class="navbar-text mr-right">
-      <!--img src="img/techresearch.png"></img-->
-      <div class="tech"><span id="power">powered by </span><span id="tech">tech.</span><span id="research">research</span></div>
-    </ul>
+    <span class="navbar-text py-0 es-navbar-text tech">
+        <span id="power">powered by </span><span id="tech">tech.</span><span id="research">research</span>
+    </span>
   </div>
 </header>
+
+<!--  <header class="header d-flex justify-content-between">
+  <img class="logo" [src]="'../assets/img/escape2.png'" alt="escape logo">
+  <span class="tech"><span id="power">powered by </span><span id="tech">tech.</span><span id="research">research</span></span>
+</header>
+ -->
 
 <div class="container-fluid">
   <div class="row">
     <!-- MENU -->
-    <nav class="col-2 menu">
+    <nav class="col-2 pt-3 es-menu">
         <ul class="nav nav-light flex-column">
-          <li class="nav-header">Navigation</li>
+          <li class="es-nav-header">Navigation</li>
           <li class="nav-item">
             <a [routerLink]="['/']" class="nav-link"><fa-icon [icon]="faHome"></fa-icon> Accueil</a>
           </li>
@@ -40,9 +39,9 @@
         </ul>
         <!--h5 class="menu-header">Erreurs</h5-->
         <ul class="nav nav-light flex-column">
-          <li class="nav-header">Erreurs</li>
+          <li class="es-nav-header">Erreurs</li>
           <li class="nav-item">
-            <a href="index.php?page=Erreurs_EditionC" class="nav-link">EditionC</a>
+            <a [routerLink]="['/Erreurs_EditionC']" class="nav-link">EditionC</a>
           </li>
           <li class="nav-item"> 
             <a [routerLink]="['/ErrorsExtractTextPdf']" class="nav-link">ExtractTextPDF</a>
@@ -50,7 +49,7 @@
           
           <li class="nav-header">...</li>
           <li class="nav-item">
-            <a href="index.php?page=News" class="nav-link"><fa-icon [icon]="faRss"></fa-icon> News</a>
+            <a [routerLink]="['/News']" class="nav-link"><fa-icon [icon]="faRss"></fa-icon> News</a>
           </li>
         </ul>
     </nav>

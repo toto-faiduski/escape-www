@@ -15,29 +15,53 @@
     src: local('Myriad Pro Bold'), url('./assets/fonts/MYRIADPRO-BOLD.woff') format('woff');
 }
 
-.navbar
-{
+/*
+.header{
     background-color: #f8f8f8;
     border: 1px solid;
     border-color: #E7E7E7;
-    border-radius: 10px;
-    padding: 0;
 }
 
-.navbar-brand
+.logo
 {
-    padding: 0;
+    line-height: 0px;
 }
-.menu
+.tech
 {
-    padding-top: 15px;
-    background-color: #f0f0f0;
+}
+ */
+
+
+.es-navbar
+{
+    position: sticky;
+    top: 0;
+    background-color: #f8f8f8;
     border: 1px solid;
     border-color: #E7E7E7;
-    border-top-left-radius: 10px;
 }
 
-.nav-header {
+.es-navbar-text
+{
+    line-height: 1;
+}
+
+nav a{
+    color: unset;
+}
+
+.es-menu
+{
+    position: sticky;
+    top: 0rem;
+    border-right: 1px solid #f0f0f0;
+    height: calc(100vh - 0rem);
+    /*background-color: #f0f0f0;
+    border: 1px solid;
+    border-color: #E7E7E7;*/
+}
+
+.es-nav-header {
     color: #999999;
     font-weight: bold;
     line-height: 20px;
