@@ -32,13 +32,11 @@
  */
 
 
-.es-navbar
-{
-    position: sticky;
-    top: 0;
-    background-color: #f8f8f8;
-    border: 1px solid;
-    border-color: #E7E7E7;
+.es-navbar {
+  position: sticky;
+  top: 0;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #E7E7E7;
 }
 
 .es-navbar-text
@@ -50,15 +48,12 @@ nav a{
     color: unset;
 }
 
-.es-menu
-{
-    position: sticky;
-    top: 0rem;
-    border-right: 1px solid #f0f0f0;
-    height: calc(100vh - 0rem);
-    /*background-color: #f0f0f0;
-    border: 1px solid;
-    border-color: #E7E7E7;*/
+.es-sidebar {
+  position: sticky;
+  top: 56px;
+  height: calc(100vh - 56px);
+  background-color: #e8e8e8;
+  border-right: 1px solid #E7E7E7;
 }
 
 .es-nav-header {
