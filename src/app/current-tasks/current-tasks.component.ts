@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+
 import { CurrentTasksService } from '../current-tasks.service';
 import { CurrentTask } from '../current-tasks.service';
 
@@ -12,12 +13,13 @@ export class CurrentTasksComponent implements OnInit {
 
   currentTasks:CurrentTask[];
   error="";
-  page=4;
+  page=1;
   id:any;
 
   constructor(
     private currentTasksService: CurrentTasksService
   ) { }
+
 
   ngOnInit() {
     /*this.currentTasksService.getCurrentTasks()

@@ -48,6 +48,12 @@ nav a{
     color: unset;
 }
 
+.es-main {
+    /* position: sticky;
+    top: 56px;
+    height: calc(100vh - 56px); */
+}
+  
 .es-sidebar {
   position: sticky;
   top: 56px;
