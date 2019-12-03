@@ -1,7 +1,7 @@
 <section>
     <h3 class="page-header">Tâches en cours</h3>
 
-    <ngb-pagination class="d-flex justify-content-center" [collectionSize]="30" [(page)]="page" aria-label="Default pagination"></ngb-pagination>
+    <ngb-pagination class="d-flex justify-content-center" [collectionSize]="currentTasks.length" [(page)]="page" aria-label="Default pagination"></ngb-pagination>
     <table class="table table-striped">
         <thead>
             <tr>

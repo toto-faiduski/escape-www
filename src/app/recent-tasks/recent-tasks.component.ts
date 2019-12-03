@@ -8,7 +8,7 @@ import {Task} from '../recent-tasks.service';
   styleUrls: ['./recent-tasks.component.css']
 })
 export class RecentTasksComponent implements OnInit {
-  recentTasks:Task[];
+  recentTasks=[];
   error="";
   page=1;
   id:any;

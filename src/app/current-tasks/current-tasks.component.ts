@@ -11,7 +11,7 @@ import { CurrentTask } from '../current-tasks.service';
 })
 export class CurrentTasksComponent implements OnInit {
 
-  currentTasks:CurrentTask[];
+  currentTasks=[];
   error="";
   page=1;
   id:any;

@@ -71,7 +71,7 @@ export class InMemoryDataService implements InMemoryDbService {
         type: 'EditionCU_MultileafEnhancement   3.1.0.48(x64)',
         parameters: 'Mode "MultiLeafEnhancement" ScriptFileName "\\\\fileserver_a\\Clients\\Bayard\\Relances\\Presse_Jeune\\Cde70929\\perso\\70929_bpj_poste#2019-10-10.apa" DataFileName "\\\\FILESERVER_A\\CLIENTS\\Bayard\\Relances\\Presse_Jeune\\Cde70929\\fichiers\\2019-10-22\\70929_bpj_poste_Edit.dat" MachineID "44" Resolution "1200" DisableScriptDisplay "YES" DisableLogEvent "YES" RemoteServer "escape_m"',
         progress: 'Waiting...'
-      },
+      }/*,
       {
         id: 'c0abdba6-afed-4517-b2cc-633a4ea50c06',
         addTime: '10/22/19 17:53:09',
@@ -247,7 +247,7 @@ export class InMemoryDataService implements InMemoryDbService {
         type: 'EditionCU_MultileafEnhancement   3.1.0.48(x64)',
         parameters: 'Mode "MultiLeafEnhancement" ScriptFileName "\\\\fileserver_a\\Clients\\Bayard\\Relances\\Presse_Jeune\\Cde70929\\perso\\70929_bpj_poste#2019-10-10.apa" DataFileName "\\\\FILESERVER_A\\CLIENTS\\Bayard\\Relances\\Presse_Jeune\\Cde70929\\fichiers\\2019-10-22\\70929_bpj_poste_Edit.dat" MachineID "44" Resolution "1200" DisableScriptDisplay "YES" DisableLogEvent "YES" RemoteServer "escape_m"',
         progress: 'Waiting...'
-      }
+      }*/
     
     ];
     return {Tasks};
