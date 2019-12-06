@@ -53,28 +53,34 @@ nav a{
     top: 56px;
     height: calc(100vh - 56px); */
 }
-  
+
 .es-sidebar {
   position: sticky;
   top: 56px;
   height: calc(100vh - 56px);
-  background-color: #e8e8e8;
+  /*background-color: #e8e8e8;*/
+  background-color: #404040;
   border-right: 1px solid #E7E7E7;
 }
 
 .es-nav-header {
-    color: #999999;
-    font-weight: bold;
-    line-height: 20px;
-    text-transform: uppercase;
-    padding-top: 8px;
-    padding-bottom: 8px;
+  /*color: #999999;*/
+  color: #007bff;
+  font-weight: bold;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.es-nav-item {
+  color: #f8f8f8;
 }
 
 .page-header {
-    padding-bottom: 9px;
-    margin: 20px 0 20px;
-    border-bottom: 1px solid #eee;
+  padding-bottom: 9px;
+  margin: 20px 0 20px;
+  border-bottom: 1px solid #eee;
 }
 .tech #power
 {

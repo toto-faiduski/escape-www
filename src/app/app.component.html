@@ -27,28 +27,28 @@
     <nav class="col-2 pt-3 es-sidebar">
         <ul class="nav nav-light flex-column">
           <li class="es-nav-header">Navigation</li>
-          <li class="nav-item">
+          <li class="nav-item es-nav-item">
             <a [routerLink]="['/']" class="nav-link"><fa-icon [icon]="faHome"></fa-icon> Accueil</a>
           </li>
-          <li class="nav-item"> 
+          <li class="nav-item es-nav-item"> 
             <a [routerLink]="['/CurrentTasks']" class="nav-link"><fa-icon [icon]="faTasks"></fa-icon> Tâches en cours</a>
           </li>
-          <li class="nav-item"> 
+          <li class="nav-item es-nav-item"> 
             <a [routerLink]="['/RecentTasks']" class="nav-link"><fa-icon [icon]="faList"></fa-icon> Dernières tâches</a>
           </li>
         </ul>
         <!--h5 class="menu-header">Erreurs</h5-->
         <ul class="nav nav-light flex-column">
           <li class="es-nav-header">Erreurs</li>
-          <li class="nav-item">
+          <li class="nav-item es-nav-item">
             <a [routerLink]="['/Erreurs_EditionC']" class="nav-link">EditionC</a>
           </li>
-          <li class="nav-item"> 
+          <li class="nav-item es-nav-item"> 
             <a [routerLink]="['/ErrorsExtractTextPdf']" class="nav-link">ExtractTextPDF</a>
           </li>
           
           <li class="es-nav-header">...</li>
-          <li class="nav-item">
+          <li class="nav-item es-nav-item">
             <a [routerLink]="['/News']" class="nav-link"><fa-icon [icon]="faRss"></fa-icon> News</a>
           </li>
         </ul>
