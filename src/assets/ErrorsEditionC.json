@@ -1,0 +1,422 @@
+[
+  {
+    "code": "0",
+    "type": "Aucun",
+    "description": "Aucune erreur",
+    "mode": "Tous"
+  },
+  {
+    "code": "1",
+    "type": "Problème d’initialisation",
+    "description": "Initialisation de la MFC - ou - Utilisation d'un client 64bits",
+    "mode": "Tous"
+  },
+  {
+    "code": "2",
+    "type": "Problème d’initialisation",
+    "description": "Initialisation de l'objet COM",
+    "mode": "Tous"
+  },
+  {
+    "code": "3",
+    "type": "Problème d’initialisation",
+    "description": "Initialisation du Windows Socket",
+    "mode": "Tous"
+  },
+  {
+    "code": "4",
+    "type": "Problème dans la déclaration des paramètres",
+    "description": "Nombre de paramètres de la ligne de commande incorrect",
+    "mode": "Tous"
+  },
+  {
+    "code": "5",
+    "type": "Problème dans la déclaration des paramètres",
+    "description": "Format des paramètres de la ligne de commande incorrect",
+    "mode": "Tous"
+  },
+  {
+    "code": "6",
+    "type": "Problème d’accès aux bases de données",
+    "description": "Erreur lors de la récupération du pointeur d'accès à BatchInformations",
+    "mode": "Tous"
+  },
+  {
+    "code": "7",
+    "type": "Erreur retournée par la base de données",
+    "description": "Erreur lors de la récupération de l'identifiant de machine et de la résolution",
+    "mode": "StreamBackupInDatabase,StreamBackupInFile"
+  },
+  {
+    "code": "8",
+    "type": "Erreur retournée par la base de données",
+    "description": "Erreur lors de la récupération de l’identifiant de lot pour la sauvegarde ou la restauration du flux",
+    "mode": "StreamBackupInDatabase,StreamRestoreFromDatabase"
+  },
+  {
+    "code": "9",
+    "type": "Erreur retournée par la base de données",
+    "description": "Erreur lors de la récupération du chemin et du nom du script",
+    "mode": "StreamBackupInDatabase,StreamBackupInFile"
+  },
+  {
+    "code": "13",
+    "type": "Problème d’accès aux bases de données",
+    "description": "Erreur lors de la récupération des informations pour l'accès aux bases de données",
+    "mode": "StreamBackupInDatabase,StreamBackupInFile"
+  },
+  {
+    "code": "14",
+    "type": "Problème d’accès au registre",
+    "description": "Erreur lors de l'insertion d'une clé dans la base de registre",
+    "mode": "Tous"
+  },
+  {
+    "code": "15",
+    "type": "Problème d’accès au registre",
+    "description": "Erreur lors de la récupération des clés de registre",
+    "mode": "Tous"
+  },
+  {
+    "code": "16",
+    "type": "Problème au transfert des ressources",
+    "description": "Erreur quelconque lors du transfert des ressources",
+    "mode": "Tous"
+  },
+  {
+    "code": "17",
+    "type": "Problème au transfert des ressources",
+    "description": "Les ressources non pas été réellement transférées (Vérification SQL)",
+    "mode": "Tous"
+  },
+  {
+    "code": "18",
+    "type": "Erreur à la compilation",
+    "description": "Erreur lors de la compilation du script",
+    "mode": "Tous sauf  StreamRestoreFromDatabase"
+  },
+  {
+    "code": "19",
+    "type": "Problème à la compilation",
+    "description": "Erreur lors de l'initialisation du mode de production",
+    "mode": "Tous sauf  StreamRestoreFromDatabase"
+  },
+  {
+    "code": "20",
+    "type": "Problème à la compilation",
+    "description": "Erreur : Reprise invalide",
+    "mode": "Tous sauf  StreamRestoreFromDatabase"
+  },
+  {
+    "code": "21",
+    "type": "Problème d’accès aux bases de données",
+    "description": "Erreur lors de l'écriture des informations de la page dans SQL",
+    "mode": "StreamBackupInDatabase"
+  },
+  {
+    "code": "22",
+    "type": "Problème d’accès au fichier",
+    "description": "Erreur lors de la création du fichier",
+    "mode": "StreamBackupInFile,StreamBackupInSpecifiedFile,StreamRestoreFromDatabase"
+  },
+  {
+    "code": "23",
+    "type": "Problème d’accès au fichier",
+    "description": "Erreur lors de l'écriture dans le fichier",
+    "mode": "StreamBackupInFile,StreamBackupInSpecifiedFile,StreamRestoreFromDatabase"
+  },
+  {
+    "code": "24",
+    "type": "Problème d’accès aux bases de données",
+    "description": "Erreur lors la lecture des informations dans SQL",
+    "mode": "StreamRestoreFromDatabase"
+  },
+  {
+    "code": "25",
+    "type": "Problème au transfert des ressources",
+    "description": "Modification des ressources entre le transfert et la création du BAT",
+    "mode": "StreamBackupInDatabase,StreamBackupInFile"
+  },
+  {
+    "code": "26",
+    "type": "Problème à la compilation",
+    "description": "Erreur lors du chargement des polices",
+    "mode": "Tous sauf  StreamRestoreFromDatabase"
+  },
+  {
+    "code": "30",
+    "type": "Problème à la compilation",
+    "description": "Le fichier script n'existe pas ou n'est pas accessible en lecture",
+    "mode": "Tous sauf  StreamRestoreFromDatabase"
+  },
+  {
+    "code": "31",
+    "type": "Problème avec les répétitifs",
+    "description": "Erreur lors de l'appel de la fonction \"SetEditionBatchPresenceState\"",
+    "mode": "Repetitive,Validation"
+  },
+  {
+    "code": "32",
+    "type": "Problème avec les répétitifs",
+    "description": "Sévérité importante retourné par la fonction \"SetEditionBatchPresenceState\"",
+    "mode": "Repetitive,Validation"
+  },
+  {
+    "code": "33",
+    "type": "Problème avec les répétitifs",
+    "description": "Erreur d’analyse du script à la déclaration d’état de présence",
+    "mode": "Repetitive,Validation"
+  },
+  {
+    "code": "34",
+    "type": "Problème avec les répétitifs",
+    "description": "Erreur lors de l'appel de la fonction \"SetDossierRepetitionFull\"",
+    "mode": "Repetitive"
+  },
+  {
+    "code": "35",
+    "type": "Problème avec les répétitifs",
+    "description": "Sévérité importante retourné par la fonction \"SetDossierRepetitionFull\"",
+    "mode": "Repetitive"
+  },
+  {
+    "code": "36",
+    "type": "Problème avec les répétitifs",
+    "description": "Erreur lors de l'initialisation du chemin du jour",
+    "mode": "Repetitive"
+  },
+  {
+    "code": "37",
+    "type": "Erreur retournée par la base de données",
+    "description": "Erreur lors de la récupération du nom du fichier script à partir du numéro de commande et du nom du lot",
+    "mode": "EmptyGenerationConnected,GenerateFile,MultiLeafEnhancement,Repetitive,Validation"
+  },
+  {
+    "code": "38",
+    "type": "Erreur retournée par la base de données",
+    "description": "Sévérité importante retournée lors de la récupération du nom du fichier script à partir du numéro de commande et du nom du lot",
+    "mode": "EmptyGenerationConnected,GenerateFile,MultiLeafEnhancement,Repetitive,Validation"
+  },
+  {
+    "code": "39",
+    "type": "Problème avec les répétitifs",
+    "description": "Niveau de répétitif inconnu",
+    "mode": "Repetitive"
+  },
+  {
+    "code": "40",
+    "type": "Problème avec les répétitifs",
+    "description": "Tentative de déclaration d’état de présence d’un lot pour un fichier multiple",
+    "mode": "Repetitive"
+  },
+  {
+    "code": "41",
+    "type": "Erreur retournée par la base de données",
+    "description": "Erreur lors de l'identification du lot",
+    "mode": "Repetitive"
+  },
+  {
+    "code": "42",
+    "type": "Erreur retournée par la base de données",
+    "description": "Erreur lors de la mise en édition du lot",
+    "mode": "Repetitive"
+  },
+  {
+    "code": "43",
+    "type": "Erreur retournée par la base de données",
+    "description": "Sévérité importante retournée lors de la mise en édition du lot",
+    "mode": "Repetitive"
+  },
+  {
+    "code": "44",
+    "type": "Erreur retournée par la base de données",
+    "description": "Sauvegarde de flux arrêtée par la base de données",
+    "mode": "StreamBackupInDatabase"
+  },
+  {
+    "code": "45",
+    "type": "Problème avec les répétitifs",
+    "description": "Tentative de déclaration d’état de présence d’un lot multi-feuillets en mode Debug",
+    "mode": "Validation"
+  },
+  {
+    "code": "46",
+    "type": "Problème avec l’enrichissement NewPage",
+    "description": "La personnalisation n’est pas multi-feuillets (mode « MultiLeafEnhancement »)",
+    "mode": "MultiLeafEnhancement"
+  },
+  {
+    "code": "47",
+    "type": "Erreur retournée par la base de données",
+    "description": "Erreur pendant le transfert des quantités de sous-lots",
+    "mode": "Tous sauf  StreamRestoreFromDatabase"
+  },
+  {
+    "code": "48",
+    "type": "Problème avec la génération de fichiers",
+    "description": "La liste des modèles est vide",
+    "mode": "GenerateFile"
+  },
+  {
+    "code": "49",
+    "type": "Problème avec la génération de fichiers",
+    "description": "Modèle non trouvé",
+    "mode": "GenerateFile"
+  },
+  {
+    "code": "50",
+    "type": "Problème avec la génération de fichiers",
+    "description": "Mémoire insuffisante",
+    "mode": "GenerateFile"
+  },
+  {
+    "code": "51",
+    "type": "Problème avec la génération de fichiers",
+    "description": "Chemin du fichier de sortie incorrect",
+    "mode": "GenerateFile"
+  },
+  {
+    "code": "52",
+    "type": "Problème avec la génération de fichiers",
+    "description": "Nombre d’enregistrements par fichier incorrect",
+    "mode": "GenerateFile"
+  },
+  {
+    "code": "53",
+    "type": "Problème avec la génération de fichiers",
+    "description": "[OutputFileOptions(GROUP)] doit être utilisé uniquement avec [SelectRecord()]",
+    "mode": "GenerateFile"
+  },
+  {
+    "code": "54",
+    "type": "Problème avec la génération de fichiers",
+    "description": "L’intervalle des pages à générer est incorrect",
+    "mode": "GenerateFile"
+  },
+  {
+    "code": "55",
+    "type": "Problème avec la génération de fichiers",
+    "description": "Base des modèles inexistante",
+    "mode": "GenerateFile"
+  },
+  {
+    "code": "56",
+    "type": "Problème avec la sécurisation des ressources",
+    "description": "Tentative de sécurisation des ressources d’un lot pour un fichier multiple",
+    "mode": "Repetitive"
+  },
+  {
+    "code": "57",
+    "type": "Problème avec la sécurisation des ressources",
+    "description": "Tentative de sécurisation des ressources d’une personnalisation multi-feuillets en mode Debug",
+    "mode": "Repetitive"
+  },
+  {
+    "code": "60",
+    "type": "Erreur lors de la génération du script",
+    "description": "Des erreurs ont été rencontrées à la génération d’au moins une page",
+    "mode": "Tous : dépend du paramètre \"BlockingErrorsOnPage\""
+  },
+  {
+    "code": "61",
+    "type": "Avertissement",
+    "description": "Des instructions « warning » ont été rencontrées lors de la génération",
+    "mode": "Tous sauf StreamRestoreFromDatabase,StreamBackupInDatabase"
+  },
+  {
+    "code": "62",
+    "type": "Avertissement",
+    "description": "Des avertissements ont été rencontrés pendant la compilation du script",
+    "mode": "Tous sauf StreamRestoreFromDatabase,StreamBackupInDatabase. Dépend du paramètre: ReturnCodeIfWarning"
+  },
+  {
+    "code": "63",
+    "type": "Erreur lors de la demande de génération du lot en mode Ged",
+    "description": "Des erreurs ont été remontées lors de la demande de génération Ged avec la base de données",
+    "mode": "GenerateFileGed"
+  },
+  {
+    "code": "64",
+    "type": "Erreur de transfert des informations pour la définition des critères de la Ged",
+    "description": "Des erreurs ont été remontées lors de la demande de définition des critères de recherche et/ou visualisation",
+    "mode": "GenerateFileGed"
+  },
+  {
+    "code": "65",
+    "type": "Erreur de l’utilisateur",
+    "description": "L’utilisateur a appuyé sur Ctrl+C dans la console",
+    "mode": "Tous"
+  },
+  {
+    "code": "66",
+    "type": "Erreur de la création ou de la mise à jour d’une variable d’environnement.",
+    "description": "La création ou la mise à jour de la variable d’environnement spécifié avec le paramètre RepetitionNumberEnvName à échouée.",
+    "mode": "Repetitive(SetEditionBatchPresenceState)"
+  },
+  {
+    "code": "67",
+    "type": "Erreur type d’imprimante incompatible avec la gestion d’un fond de page avec l’instruction Tray.",
+    "description": "Vous ne pouvez pas demander a utiliser une imprimante de type continue et insérer un fond de page grâce à la commande tray.",
+    "mode": "GenerateFile"
+  },
+  {
+    "code": "68",
+    "type": "Erreur le nombre d’instance d’EditionC s’exécutant simultanément est trop important.",
+    "description": "Vous devez attendre qu’au moins un des EditionC déjà en cours soit terminé avant de pouvoir en relancer un autre.",
+    "mode": "Tous. Il existe une limite du nombre d’EditionC que vous pouvez utiliser simultanément."
+  },
+  {
+    "code": "69",
+    "type": "Erreur échec de la mise à jour de la variable d’environnement.",
+    "description": "EditionC n’a pas pu mettre à jour une variable d’environement afin de permettre au programmeur de récupérer des informations.",
+    "mode": "Tous"
+  },
+  {
+    "code": "70",
+    "type": "Erreur le fichier de donnée n’a pas été trouvé ou est inaccessible.",
+    "description": "Impossible de trouver, ou le fichier de donnée est inaccessible.",
+    "mode": "Tous"
+  },
+  {
+    "code": "71",
+    "type": "Erreur de connexion au serveur de lancement EditionC",
+    "description": "Problème de connexion avec le serveur qui gère le traitement simultané, et en parallèle de EdtionC",
+    "mode": "Tous"
+  },
+  {
+    "code": "72",
+    "type": "Erreur lors du transfert des indexes de B.A.T à la base de donnée",
+    "description": "Une erreur a été retournée par la base de donnée lors du transfert des indexes de B.A.T ",
+    "mode": "GenerateFileGed"
+  },
+  {
+    "code": "73",
+    "type": "Erreur de génération du fichier multi-feuillet",
+    "description": "Erreur lors de la génération du fichier multi-feuillet.",
+    "mode": "MultiLeafEnhancement"
+  },
+  {
+    "code": "74",
+    "type": "Clé de protection Tagg Informatique invalide ou défectueuse",
+    "description": "Clé de protection Tagg Informatique invalide ou défectueuse.",
+    "mode": "Tous"
+  },
+  {
+    "code": "75",
+    "type": "Clé de protection Tagg Informatique invalide ou défectueuse",
+    "description": "Verification du code lots.",
+    "mode": "Tous"
+  },
+  {
+    "code": "76",
+    "type": "Clé de protection Tagg Informatique invalide ou défectueuse",
+    "description": "Verification seedcode (Attention !!! chaque dongle a un seedcode different).",
+    "mode": "Tous"
+  },
+  {
+    "code": "77",
+    "type": "Erreur de génération de fichier",
+    "description": "Erreur lors de la génération du fichier de sortie.",
+    "mode": "GenerateFile"
+  }
+]

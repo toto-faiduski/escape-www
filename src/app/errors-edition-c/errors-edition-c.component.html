@@ -1,0 +1,22 @@
+<section>
+  <h3 class="page-header">Erreurs EditionC</h3>
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Code</th>
+        <th scope="col">Type</th>
+        <th scope="col">Description</th>
+        <th scope="col">Mode</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let error of errors; index as i">
+        <th scope="row">{{ error.code | number  }}</th>
+        <td>{{ error.type }}</td>
+        <td>{{ error.description }}</td>
+        <td>{{ error.mode }}</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
