@@ -1,7 +1,8 @@
-<header class="navbar navbar-expand navbar-ligth es-navbar">
-  <a class="navbar-brand mr-0 mr-md-2 py-0" [routerLink]="['/']">
-    <img [src]="'../assets/img/escape2.png'" alt="escape logo" >
-  </a> 
+<header class="navbar navbar-expand navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+  <a class="navbar-brand col-sm-3 col-md-2 mr-0" [routerLink]="['/']">
+    <!--img [src]="'../assets/img/escape-light.png'" alt="escape logo"-->
+    <span class="escape-font">Escap</span><span class="escape-font escape-font-inv">E</span>
+  </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -10,7 +11,7 @@
     <ul class="navbar-nav mr-auto">
     </ul>
     <span class="navbar-text py-0 es-navbar-text tech">
-        <span id="power">powered by </span><span id="tech">tech.</span><span id="research">research</span>
+      <span id="power">powered by </span><span id="tech">tech.</span><span id="research">research</span>
     </span>
   </div>
 </header>
@@ -24,38 +25,40 @@
 <div class="container-fluid">
   <div class="row">
     <!-- MENU -->
-    <nav class="col-2 pt-3 es-sidebar">
+    <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+      <div class="sidebar-sticky">
+        <!--<h5 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">Navigation</h5>-->
         <ul class="nav nav-light flex-column">
-          <li class="es-nav-header">Navigation</li>
-          <li class="nav-item es-nav-item">
+          <li class="nav-item">
             <a [routerLink]="['/']" class="nav-link"><fa-icon [icon]="faHome"></fa-icon> Accueil</a>
           </li>
-          <li class="nav-item es-nav-item"> 
+          <li class="nav-item">
             <a [routerLink]="['/CurrentTasks']" class="nav-link"><fa-icon [icon]="faTasks"></fa-icon> Tâches en cours</a>
           </li>
-          <li class="nav-item es-nav-item"> 
+          <li class="nav-item">
             <a [routerLink]="['/RecentTasks']" class="nav-link"><fa-icon [icon]="faList"></fa-icon> Dernières tâches</a>
           </li>
         </ul>
-        <!--h5 class="menu-header">Erreurs</h5-->
+        <h5 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">Erreurs</h5>
         <ul class="nav nav-light flex-column">
-          <li class="es-nav-header">Erreurs</li>
-          <li class="nav-item es-nav-item">
-            <a [routerLink]="['/ErrorsEditionC']" class="nav-link">EditionC</a>
+          <li class="nav-item">
+            <a [routerLink]="['/ErrorsEditionC']" class="nav-link"><fa-icon [icon]="faExclamationTriangle"></fa-icon> EditionC</a>
           </li>
-          <li class="nav-item es-nav-item"> 
-            <a [routerLink]="['/ErrorsExtractTextPdf']" class="nav-link">ExtractTextPDF</a>
+          <li class="nav-item">
+            <a [routerLink]="['/ErrorsExtractTextPdf']" class="nav-link"><fa-icon [icon]="faExclamationTriangle"></fa-icon> ExtractTextPDF</a>
           </li>
-          
-          <li class="es-nav-header">...</li>
-          <li class="nav-item es-nav-item">
+        </ul>
+        <h5 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">...</h5>
+        <ul class="nav nav-light flex-column mb-2">
+          <li class="nav-item">
             <a [routerLink]="['/News']" class="nav-link"><fa-icon [icon]="faRss"></fa-icon> News</a>
           </li>
         </ul>
+      </div>
     </nav>
 
     <!-- CONTENT -->
-    <main class="col-10 es-main">
+    <main class="col-md-9 ml-sm-auto col-lg-10 px-4" role="main">
         <router-outlet></router-outlet>
     </main>
   </div>
