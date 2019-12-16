@@ -15,6 +15,14 @@
     src: local('Myriad Pro Bold'), url('./assets/fonts/MYRIADPRO-BOLD.woff') format('woff');
 }
 
+@font-face {
+  font-family: "handel-gothic";
+  src: local('handel-gothic'), url("./assets/fonts/handel-gothic-medium.woff") format("woff");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 500;
+}
+
 
 /*
 .header{
@@ -128,8 +136,8 @@ body {
  */
 
 .navbar-brand {
-  padding-top: .75rem;
-  padding-bottom: .75rem;
+  padding-top: 0;/*.75rem;*/
+  padding-bottom: 0;/*.75rem;*/
   font-size: 1rem;
   background-color: rgba(0, 0, 0, .25);
   box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
