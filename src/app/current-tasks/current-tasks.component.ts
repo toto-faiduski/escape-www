@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 
 import { CurrentTasksService } from '../current-tasks.service';
 import { CurrentTask } from '../current-tasks.service';
@@ -15,6 +16,8 @@ export class CurrentTasksComponent implements OnInit {
   error="";
   page=1;
   id:any;
+
+  faTrashAlt = faTrashAlt;
 
   constructor(
     private currentTasksService: CurrentTasksService
@@ -34,10 +37,14 @@ export class CurrentTasksComponent implements OnInit {
   ngOnDestroy() {
     if (this.id) {
       clearInterval(this.id);
+    }
   }
-}
   myInit() {
     this.currentTasksService.getCurrentTasks()
       .subscribe((data: CurrentTask[]) => this.currentTasks = data,error => this.error = error);
+  }
+
+  deleteTask(task){
+    alert(task);
   }
 }
