@@ -31,14 +31,14 @@ export class RecentTasksService {
     // => deux possiblité :
 
     // 1) Requete simple
-    return this.http.get<Task[]>('http://172.20.28.85:8080/api/v2/RecentTasks.json');
+    return this.http.get<Task[]>('http://172.20.28.85:8081/api/v2/RecentTasks.json');
 
     // 2) On force le preflight CORS
     // const headers = new HttpHeaders({
     //     'Content-Type': 'application/json',
     //     'X-Ping-Other': 'pingpong'
     //   });
-    // return this.http.get<Task[]>('http://172.20.28.85:8080/api/v2/RecentTasks.json',{headers});
+    // return this.http.get<Task[]>('http://172.20.28.85:8081/api/v2/RecentTasks.json',{headers});
 
    /*return [  {
       addDate: new Date(2019, 11, 14),

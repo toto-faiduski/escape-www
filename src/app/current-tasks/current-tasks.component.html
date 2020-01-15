@@ -16,7 +16,7 @@
         <tbody>
             <tr *ngFor="let task of currentTasks; index as i">
                 <!--th scope="row">{{ i + 1 }}</th-->
-                <td>{{ task.addTime | date:'dd/MM/yy hh:mm:ss'}}</td>
+                <td>{{ task.addTime | date:'dd/MM/yy HH:mm:ss'}}</td>
                 <td>{{ task.clientName }}</td>
                 <td>{{ task.type }}</td>
                 <td>{{ task.parameters }}</td>
