@@ -45,6 +45,7 @@ export class CurrentTasksComponent implements OnInit {
   }
 
   deleteTask(task){
-    alert(task);
+    //alert(task);
+    confirm("Etes-vous sûr de vouloir supprimer cette tâche ?");
   }
 }
