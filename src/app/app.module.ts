@@ -35,14 +35,14 @@ import { ErrorsEditionCComponent } from './errors-edition-c/errors-edition-c.com
     // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
     // and returns simulated server responses.
     // Remove it when a real server is ready to receive requests.
-    HttpClientInMemoryWebApiModule.forRoot(
-      InMemoryDataService, {
-        apiBase: 'api/v2/',
-        dataEncapsulation: false,
-        passThruUnknownUrl: true,
-        put204: false // return entity after PUT/update
-      }
-    )
+    // HttpClientInMemoryWebApiModule.forRoot(
+    //   InMemoryDataService, {
+    //     apiBase: 'api/v2/',
+    //     dataEncapsulation: false,
+    //     passThruUnknownUrl: true,
+    //     put204: false // return entity after PUT/update
+    //   }
+    // )
   ],
   providers: [],
   bootstrap: [AppComponent]

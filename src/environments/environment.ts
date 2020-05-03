@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  escape_addr: '172.20.16.50',
+  escape_port: 8081
 };
 
 /*

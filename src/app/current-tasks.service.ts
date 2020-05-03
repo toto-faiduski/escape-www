@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import {HttpHeaders} from "@angular/common/http";
+import { environment } from '../environments/environment';
 
 export interface CurrentTask {
   id: string;
@@ -27,7 +28,8 @@ export class CurrentTasksService {
       // => deux possiblité :
   
       // 1) Requete simple
-      return this.http.get<CurrentTask[]>('http://172.20.28.85:8081/api/v2/Tasks.json');
+      //return this.http.get<CurrentTask[]>('http://172.20.28.85:8081/api/v2/Tasks.json');
+      return this.http.get<CurrentTask[]>('http://'+environment.escape_addr+':'+environment.escape_port+'/api/v2/Tasks.json');
   
       // 2) On force le preflight CORS
       // const headers = new HttpHeaders({

@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { HttpHeaders } from '@angular/common/http';
 
+import { environment } from '../environments/environment';
+
 
 export interface Task {
   addTime: Date;
@@ -31,7 +33,8 @@ export class RecentTasksService {
     // => deux possiblité :
 
     // 1) Requete simple
-    return this.http.get<Task[]>('http://172.20.28.85:8081/api/v2/RecentTasks.json');
+    //return this.http.get<Task[]>('http://172.20.28.85:8081/api/v2/RecentTasks.json');
+    return this.http.get<Task[]>('http://'+environment.escape_addr+':'+environment.escape_port+'/api/v2/RecentTasks.json');
 
     // 2) On force le preflight CORS
     // const headers = new HttpHeaders({
